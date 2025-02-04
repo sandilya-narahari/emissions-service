@@ -1,0 +1,9 @@
+scope3:
+  api_url: "https://api.scope3.com/v2"
+  token: "${SCOPE3_API_TOKEN}"
+server:
+  host: "0.0.0.0"
+  port: 8080
+cache:
+  default_ttl: "24h"
+  cleanup_interval: "1h"

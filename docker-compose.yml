@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SCOPE3_API_TOKEN=${SCOPE3_API_TOKEN}
+    volumes:
+      - "${PWD}/config.yaml:/app/config.yaml"
